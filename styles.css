@@ -1,0 +1,499 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+body {
+  font-family: 'Faustina', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("images/background.webp");
+  background-size: cover;
+}  
+p  {
+  font-size: 1.2vw;
+  }     
+  /*heading styling*/
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: 600;
+    color:rgb(1, 29, 1)
+    
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 5.2vw;
+    }
+    h1 .sm{
+        font-size: 0.5em;
+    }
+    
+    h2 {
+        font-size: 2.0vw;
+        font-style: italic;
+    }
+  
+  
+@media only screen and (max-device-width: 700px) {
+p  {
+font-size: 1.2vw;
+}     
+/*heading styling*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: 600;
+  color:rgb(1, 29, 1)
+  
+  }
+  h1 {
+      font-weight: 800;
+      font-size: 5.2vw;
+  }
+  h1 .sm{
+      font-size: 0.5em;
+  }
+  
+  h2 {
+      font-size: 2.0vw;
+      font-style: italic;
+  }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+  p  {
+  font-size: 1.2vw;
+  }     
+  /*heading styling*/
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: 600;
+    color:rgb(1, 29, 1)
+    
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 50px;
+    }
+    h1 .sm{
+        font-size: 0.5em;
+    }
+    
+    h2 {
+        font-size: 2.0vw;
+        font-style: italic;
+    }
+  }
+/* svg ball styling */
+#ball {
+    position: absolute;
+    left: 75%;
+    width: 20%;
+    top: 95%;
+  
+  }
+
+svg {
+cursor: pointer;
+}
+/*gallery styling */
+
+section .section-fourth-screen .gallery {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s linear;
+}
+
+section .section-fourth-screen .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+ section .section-fourth-screen .gallery  a{
+  height: 100px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px rgb(14, 58, 45);
+  }
+  
+ section .section-fourth-screen .gallery a img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+  
+  section .section-fourth-screen  .gallery a img:hover {
+    transform:scale(1.4);
+  }
+  #lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 94, 35, 0.8);
+    background: 0%;
+    display: none;
+  }
+  
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+  
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ 
+  /* sticky logo*/
+#logo {
+  position: fixed;
+  right: 9%;
+  top: 10%;
+  border-color: rgb(8, 0, 0);
+  width: 12%;
+}
+
+#logo2 {
+  position: fixed;
+  right: 9%;
+  top: 10%;
+  border-color: rgb(8, 0, 0);
+  width: 12%;
+  visibility: hidden;
+}
+
+
+#switch {
+  position: fixed;
+  right: 5%;
+  top: 13%;
+  padding:5%;
+  
+}
+
+
+  /* top navigation styling finish */
+  #home-dog {
+    position: absolute;
+    right: 1%;
+    width: 43%;
+    top: 54%;
+}
+
+.section-home .content {
+  position: absolute;
+  width: 38%;
+  left: 7%;
+  top: 15%;
+}
+.section-second-screen .content {
+  position: relative;
+  width: 68%;
+  left: 7%;
+  top: 3%;
+}
+.section-third-screen .content {
+  position: relative;
+    width: 58%;
+    left: 7%;
+    top:10%;
+}
+.section-fourth-screen .content {
+  position: relative;
+  width: 70%;
+  left: 7%;
+  top: 10%;
+
+  
+}
+
+.slide-one .slide-two .slide-three .slide-four .content {
+  position: relative;
+  width: 38%;
+  left: 7%;
+  top: 25%;
+}
+
+
+
+/* slide styling */
+
+
+  /* home screen home-dog css and animation */
+
+  #home-dog {
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    width: 25%;
+  }
+  #home-dog:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.8s;
+  
+    /* When the animation is finished, start again 
+    animation-iteration-count: infinite;*/
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+button.is-big {
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+button .fa-angle-right, 
+button .fa-angle-left {
+    color: rgb(3, 37, 26);
+    margin-left: 0.5em;
+
+}
+#fp-nav ul li .fp-tooltip {
+    color: black;
+    font-family: 'Faustina', serif;
+    font-size: 16pt;
+
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 1%;
+  margin-bottom: 10%;
+}
+@media (max-width: 800px) {
+ .container {
+    flex-direction: column;
+    
+  }
+}
+.container img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#home-dog1 {
+  position: absolute;
+  left: 75%;
+  width: 20%;
+  top: 55%;
+}
+#home-dog1:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.8s;
+
+  /* When the animation is finished, start again 
+  animation-iteration-count: infinite;*/
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#home-dog2 {
+  position: absolute;
+  left: 75%;
+  width: 20%;
+  top: 55%;
+}
+#home-dog2:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.8s;
+
+  /* When the animation is finished, start again 
+  animation-iteration-count: infinite;*/
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#home-dog3 {
+  position: absolute;
+  left: 98%;
+  width:30%;
+  top: 35%;
+}
+#home-dog3:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.8s;
+
+  /* When the animation is finished, start again 
+  animation-iteration-count: infinite;*/
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media only screen and (max-device-width: 700px) {
+  #home-dog1 {
+    position: absolute;
+    left: 75%;
+    width: 20%;
+    top: 55%;
+  }
+  #home-dog3 {
+    position: absolute;
+    left: 98%;
+    width:30%;
+    top: 35%;
+  }
+  #switch {
+    position: fixed;
+    right: 5%;
+    top: 13%;
+    padding:5%;
+    
+  }
+  button.is-big {
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+button .fa-angle-right, 
+button .fa-angle-left {
+    color: rgb(3, 37, 26);
+    margin-left: 0.5em;
+
+}
+#fp-nav ul li .fp-tooltip {
+    color: black;
+    font-family: 'Faustina', serif;
+    font-size: 16pt;
+
+}
+}
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+  #home-dog1 {
+    position: absolute;
+    left: 75%;
+    width: 20%;
+    top: 55%;
+  }
+  #switch {
+    position: fixed;
+    right: 5%;
+    top: 13%;
+    padding:5%;
+    
+  }
+  #home-dog3 {
+    position: absolute;
+    left: 98%;
+    width:30%;
+    top: 35%;
+  }
+  #switch {
+    position: fixed;
+    right: 5%;
+    top: 13%;
+    padding:5%;
+    
+  }
+  button.is-big {
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+button .fa-angle-right, 
+button .fa-angle-left {
+    color: rgb(3, 37, 26);
+    margin-left: 0.5em;
+
+}
+#fp-nav ul li .fp-tooltip {
+    color: black;
+    font-family: 'Faustina', serif;
+    font-size: 16pt;
+
+}
+}
+/*footer to include copyright and slight differentiation of background colour not to highlight but to indicate a different type of content*/
+footer {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: .5em;
+  text-align: right;
+  padding-top: 7%;
+  
+}
+
+
